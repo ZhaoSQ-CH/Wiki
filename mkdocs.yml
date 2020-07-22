@@ -1,4 +1,4 @@
 site_name: My Docs
 nav:
     - Home: index.md
-    - 01: QEMU install Ubuntu 20.04.md
+    - 学习QEMU如何使用: QEMU install Ubuntu 20.04.md

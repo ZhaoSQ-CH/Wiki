@@ -153,17 +153,19 @@
 <p>启动QEMU的VM，安装ubuntu</p>
 </li>
 </ul>
-<p>~~~
-  ```shell
+<pre><code>shell
   ## 创建盘
-  qemu-img.exe create -f qcow2 .\workspace\img\ubuntu.img 60G</p>
-<p>## 启动虚拟机，第一次加载引导程序
+  qemu-img.exe create -f qcow2 .\workspace\img\ubuntu.img 60G
+
+  ## 启动虚拟机，第一次加载引导程序
   qemu-system-x86_64.exe -name test -m 4096 -machine accel=hax -cdrom .\workspace\ubuntu\ubuntu-20.04-desktop-amd64.iso .\workspace\img\ubuntu.img
   ## -m 4096 设置内存
-  ## -machine accel=hax 加速</p>
-<p>## 启动虚拟机, 第二次启动，以后都可以用这种方式启动
+  ## -machine accel=hax 加速
+
+  ## 启动虚拟机, 第二次启动，以后都可以用这种方式启动
   qemu-system-x86_64.exe -name test -m 4096 -machine accel=hax .\workspace\img\ubuntu.img
-  ~~~</p>
+</code></pre>
+
 <h2 id="ubuntu_1">按照ubuntu安装设置，进行安装</h2>
 <p>提示：为了提高安装速度尽量不要使用，网络连接更新下载等操作。</p>
 <p><img alt="01-1" src="../image/01-1.jpg" /></p></div>

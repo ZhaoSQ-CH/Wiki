@@ -1,4 +1,5 @@
-site_name: My Docs
+site_name: QEMU Study Docs
 nav:
     - Home: index.md
-    - 学习QEMU如何使用: QEMU install Ubuntu 20.04.md
+    - 01: QEMU install Ubuntu 20.04.md
+theme: readthedocs
